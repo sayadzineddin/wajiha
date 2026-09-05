@@ -1,15 +1,9 @@
-<?php
-// Wajiha Configuration
-$brand_name = "واجهة | Wajiha";
-$instagram_handle = "Contact us";
-$tagline = "دقة الواجهة و صلابة الكود";
-?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $brand_name ?> | للحلول البرمجية والتصميم الإبداعي</title>
+    <title>واجهة | Wajiha | للحلول البرمجية والتصميم الإبداعي</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -43,8 +37,6 @@ $tagline = "دقة الواجهة و صلابة الكود";
         body { font-family: 'Tajawal', sans-serif; }
         .mono { font-family: 'IBM Plex Mono', monospace; direction: ltr; unicode-bidi: isolate; }
 
-        
-
         .cursor-blink { animation: blink 1.1s steps(1) infinite; }
         @media (prefers-reduced-motion: reduce) {
             .cursor-blink { animation: none; }
@@ -60,15 +52,15 @@ $tagline = "دقة الواجهة و صلابة الكود";
     <header class="w-full max-w-5xl mx-auto px-6 py-5 flex justify-between items-center border-b border-ink/10 dark:border-paper/10">
         <div class="flex items-center gap-3">
             <div class="w-9 h-9 border border-ink dark:border-paper rounded-sm flex items-center justify-center font-black text-base">و</div>
-            <span class="text-lg font-extrabold tracking-tight"><?= $brand_name ?></span>
+            <span class="text-lg font-extrabold tracking-tight">واجهة | Wajiha</span>
         </div>
 
         <div class="flex items-center gap-2">
-            <a href="https://instagram.com/<?= $instagram_handle ?>" target="_blank" rel="noopener noreferrer"
+            <a href="https://instagram.com/Contact us" target="_blank" rel="noopener noreferrer"
                class="flex items-center gap-2 px-3 py-2 text-xs font-medium border border-ink/15 dark:border-paper/15 rounded-sm hover:border-copper dark:hover:border-copper-dark transition-colors"
                aria-label="حساب الانستغرام">
                 <i class="fa-brands fa-instagram text-sm"></i>
-                <span class="hidden sm:inline mono"><?= $instagram_handle ?></span>
+                <span class="hidden sm:inline mono">Contact us</span>
             </a>
             <button id="themeToggle" class="p-2.5 border border-ink/15 dark:border-paper/15 rounded-sm hover:border-copper dark:hover:border-copper-dark transition-colors" aria-label="تبديل المظهر">
                 <i class="fa-solid fa-moon dark:hidden"></i>
@@ -80,11 +72,8 @@ $tagline = "دقة الواجهة و صلابة الكود";
     <!-- Hero -->
     <main class="w-full max-w-3xl mx-auto px-6 py-14 my-auto text-center flex flex-col items-center">
 
-        <!-- Facade illustration: windows as code, roof as a design pen stroke, door as a blinking cursor -->
-        
-
         <h1 class="text-3xl sm:text-5xl font-black leading-tight mb-5 tracking-tight max-w-xl">
-            <?= $tagline ?>
+            دقة الواجهة و صلابة الكود
         </h1>
 
         <p class="text-sm sm:text-lg text-ink-soft dark:text-ink-dsoft max-w-lg mb-10 leading-relaxed">
@@ -113,7 +102,7 @@ $tagline = "دقة الواجهة و صلابة الكود";
             <p class="text-sm text-ink-soft dark:text-ink-dsoft mb-8">اختر نوع الخدمة التي ترغب بطلبها للبدء في التفاصيل</p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <a href="order.php?service=dev"
+                <a href="#dev"
                    class="relative p-6 border border-ink/15 dark:border-paper/15 hover:border-steel dark:hover:border-steel-dark rounded-sm flex flex-col items-center gap-3 transition-colors">
                     <span class="absolute top-3 left-3 mono text-[10px] text-ink-soft/60 dark:text-ink-dsoft/50">DEV</span>
                     <div class="w-12 h-12 border border-steel text-steel dark:text-steel-dark rounded-sm flex items-center justify-center text-xl">
@@ -123,7 +112,7 @@ $tagline = "دقة الواجهة و صلابة الكود";
                     <p class="text-xs text-ink-soft dark:text-ink-dsoft">مواقع وتطبيقات متكاملة وقواعد بيانات مخصصة.</p>
                 </a>
 
-                <a href="order.php?service=design"
+                <a href="#design"
                    class="relative p-6 border border-ink/15 dark:border-paper/15 hover:border-copper rounded-sm flex flex-col items-center gap-3 transition-colors">
                     <span class="absolute top-3 left-3 mono text-[10px] text-ink-soft/60 dark:text-ink-dsoft/50">UI/UX</span>
                     <div class="w-12 h-12 border border-copper text-copper dark:text-copper-dark rounded-sm flex items-center justify-center text-xl">
@@ -137,7 +126,7 @@ $tagline = "دقة الواجهة و صلابة الكود";
     </div>
 
     <footer class="w-full max-w-5xl mx-auto px-6 py-6 text-center text-xs mono text-ink-soft/70 dark:text-ink-dsoft/60 border-t border-ink/10 dark:border-paper/10">
-        &copy; <?= date('Y') ?> — <?= $brand_name ?>. جميع الحقوق محفوظة.
+        &copy; 2026 — واجهة | Wajiha. جميع الحقوق محفوظة.
     </footer>
 
     <script>
